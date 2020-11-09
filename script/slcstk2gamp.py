@@ -422,8 +422,7 @@ if __name__ == '__main__':
                 inps.rlks,
                 inps.alks)
             runCmd(cmd)
-            temp_name = os.path.join(outputampdir, '.amp'.format(slcdate))
-            print('Replacing {} with {}'.format(lookedname, temp_name))
+            temp_name = os.path.join(outputampdir, '{}.amp'.format(slcdate))
             os.remove(temp_name)
             os.rename(lookedname, temp_name)
             lookedname=temp_name
