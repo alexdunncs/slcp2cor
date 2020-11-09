@@ -422,6 +422,9 @@ if __name__ == '__main__':
                 inps.rlks,
                 inps.alks)
             runCmd(cmd)
+            temp_name = os.path.join(outputampdir, slcdate, '.amp')
+            os.remove(temp_name)
+            os.rename(lookedname, temp_name)
             
         output=lookedname + '.geo'
         
