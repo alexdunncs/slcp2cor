@@ -425,6 +425,7 @@ if __name__ == '__main__':
             temp_name = os.path.join(outputampdir, slcdate, '.amp')
             os.remove(temp_name)
             os.rename(lookedname, temp_name)
+            lookedname=temp_name
             
         output=lookedname + '.geo'
         
